@@ -1,0 +1,28 @@
+{
+    "name": "bitmyth/passport-client",
+    "authors": [
+        {
+            "name": "gsh",
+            "email": "bitmyth@outlook.com"
+        }
+    ],
+    "require": {
+        "tymon/jwt-auth": "1.*@rc"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bitmyth\\PassportClient\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "JWTAuth": "Tymon\\JWTAuth\\Facades\\JWTAuth",
+                "JWTFactory": "Tymon\\JWTAuth\\Facades\\JWTFactory"
+            },
+            "providers": [
+                "Bitmyth\\PassportClient\\Providers\\LaravelServiceProvider"
+            ]
+        }
+    }
+}
